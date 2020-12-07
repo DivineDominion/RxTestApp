@@ -87,6 +87,20 @@
 			remoteGlobalIDString = C8E8BA551E2C181A00A4AC2C;
 			remoteInfo = Benchmarks;
 		};
+		50220ECC257E8554004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C80938F51B8A71760088E94D;
+			remoteInfo = RxCocoa;
+		};
+		50220ECE257E8554004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
+			remoteInfo = RxSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -196,6 +210,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				50220ECD257E8554004165FB /* PBXTargetDependency */,
+				50220ECF257E8554004165FB /* PBXTargetDependency */,
 			);
 			name = RxTestApp;
 			productName = RxTestApp;
@@ -336,6 +352,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50220ECD257E8554004165FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxCocoa;
+			targetProxy = 50220ECC257E8554004165FB /* PBXContainerItemProxy */;
+		};
+		50220ECF257E8554004165FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxSwift;
+			targetProxy = 50220ECE257E8554004165FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50220E8F257E78B3004165FB /* MainMenu.xib */ = {
