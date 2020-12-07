@@ -1,8 +1,13 @@
 # Test Project to Demonstrate that archiving with RxCocoa fails
 
+Check out the project:
+
+- `git clone --recursive https://github.com/DivineDominion/RxTestApp.git`
+- ... or initialize submodules after cloning `git submodule init; git submodule update`
+
 Archiving a macOS app for distribution with RxCocoa fails on my machine. Here's how, and what it says.
 
-Similar issues on the web:
+Similar issues I found on the web:
 
 - https://github.com/helpscout/beacon-ios-sdk/issues/113 (closed source): "The i386 architecture needs stripping from Beacon.framework if to be successfully submitted to the store."
 
@@ -11,11 +16,12 @@ Similar issues on the web:
 Showing results for both
 
 - Xcode, and
-- Fastlane.
+- Fastlane
+
+after cloning the repo.
 
 ### Manual / Xcode
 
-1. `git clone --recursive` or initialize submodules after checkout
 2. Open Xcode project
 3. Adjust the app target's code signing identity to yours
 3. Make an "Archive" build in Xcode
