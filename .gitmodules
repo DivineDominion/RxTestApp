@@ -1,5 +1,0 @@
-[submodule "Extern/RxSwift"]
-	path = Extern/RxSwift
-	url = https://github.com/ReactiveX/RxSwift.git
-[submodule "RxSwift"]
-	url = https://github.com/DivineDominion/RxSwift.git
