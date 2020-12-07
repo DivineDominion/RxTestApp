@@ -14,6 +14,8 @@
 		50220EC8257E7D20004165FB /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EAA257E7D0C004165FB /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50220EC9257E7D20004165FB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EA8257E7D0C004165FB /* RxSwift.framework */; };
 		50220ECA257E7D20004165FB /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EA8257E7D0C004165FB /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50A7FC3C257E8A500064825D /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EAC257E7D0C004165FB /* RxRelay.framework */; };
+		50A7FC3D257E8A500064825D /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EAC257E7D0C004165FB /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,13 @@
 			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
 			remoteInfo = RxSwift;
 		};
+		50A7FC3E257E8A580064825D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A2897CB3225CA1E7004EA481;
+			remoteInfo = RxRelay;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,6 +121,7 @@
 			files = (
 				50220ECA257E7D20004165FB /* RxSwift.framework in Embed Frameworks */,
 				50220EC8257E7D20004165FB /* RxCocoa.framework in Embed Frameworks */,
+				50A7FC3D257E8A500064825D /* RxRelay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +145,7 @@
 			files = (
 				50220EC9257E7D20004165FB /* RxSwift.framework in Frameworks */,
 				50220EC7257E7D20004165FB /* RxCocoa.framework in Frameworks */,
+				50A7FC3C257E8A500064825D /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +221,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				50A7FC3F257E8A580064825D /* PBXTargetDependency */,
 				50220ECD257E8554004165FB /* PBXTargetDependency */,
 				50220ECF257E8554004165FB /* PBXTargetDependency */,
 			);
@@ -363,6 +375,11 @@
 			isa = PBXTargetDependency;
 			name = RxSwift;
 			targetProxy = 50220ECE257E8554004165FB /* PBXContainerItemProxy */;
+		};
+		50A7FC3F257E8A580064825D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxRelay;
+			targetProxy = 50A7FC3E257E8A580064825D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
