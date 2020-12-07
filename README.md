@@ -2,6 +2,10 @@
 
 Archiving a macOS app for distribution with RxCocoa fails on my machine. Here's how, and what it says.
 
+Similar issues on the web:
+
+- https://github.com/helpscout/beacon-ios-sdk/issues/113 (closed source): "The i386 architecture needs stripping from Beacon.framework if to be successfully submitted to the store."
+
 ## Steps to Reproduce
 
 Showing results for both
