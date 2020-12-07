@@ -10,7 +10,99 @@
 		50220E8C257E78B1004165FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50220E8B257E78B1004165FB /* AppDelegate.swift */; };
 		50220E8E257E78B3004165FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50220E8D257E78B3004165FB /* Assets.xcassets */; };
 		50220E91257E78B3004165FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50220E8F257E78B3004165FB /* MainMenu.xib */; };
+		50220EC7257E7D20004165FB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EAA257E7D0C004165FB /* RxCocoa.framework */; };
+		50220EC8257E7D20004165FB /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EAA257E7D0C004165FB /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50220EC9257E7D20004165FB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EA8257E7D0C004165FB /* RxSwift.framework */; };
+		50220ECA257E7D20004165FB /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50220EA8257E7D0C004165FB /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50220EA7257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8A56AD71AD7424700B4673B;
+			remoteInfo = RxSwift;
+		};
+		50220EA9257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C809396D1B8A71760088E94D;
+			remoteInfo = RxCocoa;
+		};
+		50220EAB257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2897D53225CA1E7004EA481;
+			remoteInfo = RxRelay;
+		};
+		50220EAD257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8093BC71B8A71F00088E94D;
+			remoteInfo = RxBlocking;
+		};
+		50220EAF257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C88FA50C1C25C44800CCFEA4;
+			remoteInfo = RxTest;
+		};
+		50220EB1257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83508C31C386F6F0027C24C;
+			remoteInfo = "AllTests-iOS";
+		};
+		50220EB3257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83509841C38740E0027C24C;
+			remoteInfo = "AllTests-tvOS";
+		};
+		50220EB5257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83509941C38742C0027C24C;
+			remoteInfo = "AllTests-macOS";
+		};
+		50220EB7257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C85BA04B1C3878740075D68E;
+			remoteInfo = Microoptimizations;
+		};
+		50220EB9257E7D0C004165FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8E8BA551E2C181A00A4AC2C;
+			remoteInfo = Benchmarks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50220ECB257E7D21004165FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50220ECA257E7D20004165FB /* RxSwift.framework in Embed Frameworks */,
+				50220EC8257E7D20004165FB /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50220E88257E78B1004165FB /* RxTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +111,7 @@
 		50220E90257E78B3004165FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		50220E92257E78B3004165FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50220E93257E78B3004165FB /* RxTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RxTestApp.entitlements; sourceTree = "<group>"; };
+		50220E9A257E7D0C004165FB /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Extern/RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50220EC9257E7D20004165FB /* RxSwift.framework in Frameworks */,
+				50220EC7257E7D20004165FB /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +130,10 @@
 		50220E7F257E78B1004165FB = {
 			isa = PBXGroup;
 			children = (
+				50220E9A257E7D0C004165FB /* Rx.xcodeproj */,
 				50220E8A257E78B1004165FB /* RxTestApp */,
 				50220E89257E78B1004165FB /* Products */,
+				50220EC6257E7D20004165FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +157,30 @@
 			path = RxTestApp;
 			sourceTree = "<group>";
 		};
+		50220E9B257E7D0C004165FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50220EA8257E7D0C004165FB /* RxSwift.framework */,
+				50220EAA257E7D0C004165FB /* RxCocoa.framework */,
+				50220EAC257E7D0C004165FB /* RxRelay.framework */,
+				50220EAE257E7D0C004165FB /* RxBlocking.framework */,
+				50220EB0257E7D0C004165FB /* RxTest.framework */,
+				50220EB2257E7D0C004165FB /* AllTests-iOS.xctest */,
+				50220EB4257E7D0C004165FB /* AllTests-tvOS.xctest */,
+				50220EB6257E7D0C004165FB /* AllTests-macOS.xctest */,
+				50220EB8257E7D0C004165FB /* PerformanceTests.app */,
+				50220EBA257E7D0C004165FB /* Benchmarks.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50220EC6257E7D20004165FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,6 +191,7 @@
 				50220E84257E78B1004165FB /* Sources */,
 				50220E85257E78B1004165FB /* Frameworks */,
 				50220E86257E78B1004165FB /* Resources */,
+				50220ECB257E7D21004165FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,12 +227,92 @@
 			mainGroup = 50220E7F257E78B1004165FB;
 			productRefGroup = 50220E89257E78B1004165FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50220E9B257E7D0C004165FB /* Products */;
+					ProjectRef = 50220E9A257E7D0C004165FB /* Rx.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50220E87257E78B1004165FB /* RxTestApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		50220EA8257E7D0C004165FB /* RxSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxSwift.framework;
+			remoteRef = 50220EA7257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EAA257E7D0C004165FB /* RxCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxCocoa.framework;
+			remoteRef = 50220EA9257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EAC257E7D0C004165FB /* RxRelay.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxRelay.framework;
+			remoteRef = 50220EAB257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EAE257E7D0C004165FB /* RxBlocking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxBlocking.framework;
+			remoteRef = 50220EAD257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EB0257E7D0C004165FB /* RxTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxTest.framework;
+			remoteRef = 50220EAF257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EB2257E7D0C004165FB /* AllTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-iOS.xctest";
+			remoteRef = 50220EB1257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EB4257E7D0C004165FB /* AllTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-tvOS.xctest";
+			remoteRef = 50220EB3257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EB6257E7D0C004165FB /* AllTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-macOS.xctest";
+			remoteRef = 50220EB5257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EB8257E7D0C004165FB /* PerformanceTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			name = PerformanceTests.app;
+			path = Microoptimizations.app;
+			remoteRef = 50220EB7257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50220EBA257E7D0C004165FB /* Benchmarks.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Benchmarks.xctest;
+			remoteRef = 50220EB9257E7D0C004165FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50220E86257E78B1004165FB /* Resources */ = {
