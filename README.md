@@ -1,3 +1,29 @@
+# Solution: Disable Bitcode for arm64
+
+Thanks to Matteo Rattotti of https://bear.app/ for pointing out that this is a problem of the Rx project setup: `ENABLE_BITCODE` must be `NO`.
+
+You can enforce this in Podfile overrides of project settings, or via Carthage: 
+
+```sh
+#!/usr/bin/env bash
+
+# carthage.sh
+# Usage example: ./carthage.sh build --platform iOS
+
+set -euo pipefail
+
+xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
+trap 'rm -f "$xcconfig"' INT TERM HUP EXIT
+
+# (other settings here)
+echo 'ENABLE_BITCODE = NO' >> $xcconfig
+
+export XCODE_XCCONFIG_FILE="$xcconfig"
+carthage "$@"
+```
+
+----------
+
 # Test Project to Demonstrate that archiving with RxCocoa fails
 
 Check out the project:
